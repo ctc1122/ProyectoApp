@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PlaceHolder"
+            android:layout_centerHorizontal="true"
+            android:textSize="40sp"
+            android:paddingTop="10dp"
+            >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:padding="10dp"
+            android:rowCount="2">
+
+            <Button
+                android:layout_gravity="fill"
+                android:layout_marginRight="10dp"
+                android:width="160dp"
+                android:height="110dp"
+                android:backgroundTint="@color/azulOscuro"
+                android:fontFamily="@font/prototype"
+                android:text="Conexión a internet"
+                app:icon="@drawable/wifiicono" />
+
+            <Button
+                android:layout_gravity="fill"
+                android:width="160dp"
+                android:backgroundTint="@color/azulOscuro"
+                android:fontFamily="@font/prototype"
+                android:text="Cámara"
+                app:icon="@android:drawable/ic_menu_camera"
+                android:drawablePadding="40mm"
+                />
+
+            <Button
+                android:layout_gravity="fill"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/azulOscuro"
+                android:text="Galería"
+                android:fontFamily="@font/prototype"
+                />
+
+            <Button
+                android:layout_gravity="fill"
+                android:height="110dp"
+                android:backgroundTint="@color/azulOscuro"
+                android:text="Sensores"
+                android:fontFamily="@font/prototype"
+                />
+        </GridLayout>
+    </RelativeLayout>
+</LinearLayout>
