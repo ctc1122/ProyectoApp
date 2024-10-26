@@ -7,70 +7,87 @@
     >
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2">
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
         <TextView
+            android:id="@+id/texto1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PlaceHolder"
+            android:maxWidth="280dp"
             android:layout_centerHorizontal="true"
-            android:textSize="40sp"
-            android:paddingTop="10dp"
-            >
-        </TextView>
+            android:paddingTop="5dp"
+            android:textAlignment="gravity"
+            android:text="PlaceHolder"
+            android:textSize="50sp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/decomart"
+            android:textStyle="bold"
+            ></TextView>
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="8">
+        android:layout_weight="9">
 
         <GridLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_margin="10dp"
-            android:layout_weight="0"
-            android:alignmentMode="alignMargins"
             android:columnCount="2"
             android:padding="10dp"
-            android:rowCount="2">
+            android:rowCount="2"
 
+            >
             <Button
                 android:layout_gravity="fill"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="11dp"
+
                 android:width="160dp"
                 android:height="110dp"
-                android:backgroundTint="@color/azulOscuro"
+                android:backgroundTint="#0B3D2E"
                 android:fontFamily="@font/prototype"
                 android:text="Conexión a internet"
-                app:icon="@drawable/wifiicono" />
+                android:textColor="#A3A3A3"
+                app:icon="@drawable/wifiicono"
+                app:iconTint="#A3A3A3"
+                />
+
 
             <Button
                 android:layout_gravity="fill"
+
                 android:width="160dp"
-                android:backgroundTint="@color/azulOscuro"
+                android:backgroundTint="#0B3D2E"
+                android:textColor="#A3A3A3"
                 android:fontFamily="@font/prototype"
                 android:text="Cámara"
                 app:icon="@android:drawable/ic_menu_camera"
-                android:drawablePadding="40mm"
+                app:iconTint="#A3A3A3"
                 />
 
             <Button
+
                 android:layout_gravity="fill"
-                android:layout_marginRight="10dp"
-                android:backgroundTint="@color/azulOscuro"
-                android:text="Galería"
+                android:layout_marginRight="11dp"
+                android:backgroundTint="#0B3D2E"
                 android:fontFamily="@font/prototype"
-                />
+                android:text="Galería"
+                android:textColor="#A3A3A3"
+                app:icon="@drawable/galeriaimg"
+                app:iconTint="#A3A3A3"/>
 
             <Button
+                android:layout_height="wrap_content"
                 android:layout_gravity="fill"
                 android:height="110dp"
-                android:backgroundTint="@color/azulOscuro"
-                android:text="Sensores"
+                android:backgroundTint="#0B3D2E"
                 android:fontFamily="@font/prototype"
-                />
+                android:text="Sensores"
+                android:textColor="#A3A3A3"
+                app:icon="@drawable/sensores"
+                app:iconTint="#A3A3A3"/>
         </GridLayout>
     </RelativeLayout>
 </LinearLayout>

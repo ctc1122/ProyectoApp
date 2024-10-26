@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    namespace = "com.example.cajamoradamovil"
+    namespace = "com.dam.cajamoradalocal"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.cajamoradamovil"
-        minSdk = 21
+        applicationId = "com.dam.cajamoradalocal"
+        minSdk = 22
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
